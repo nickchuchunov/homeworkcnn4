@@ -199,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\homeworkcnn4\\WeatherController\\WeatherController\\WeatherController.csproj",
+      "projectUniqueName": "H:\\homeworkcnn3\\WeatherController\\WeatherController\\WeatherController.csproj",
       "projectName": "WeatherController",
-      "projectPath": "H:\\homeworkcnn4\\WeatherController\\WeatherController\\WeatherController.csproj",
+      "projectPath": "H:\\homeworkcnn3\\WeatherController\\WeatherController\\WeatherController.csproj",
       "packagesPath": "C:\\Users\\chuch\\.nuget\\packages\\",
-      "outputPath": "H:\\homeworkcnn4\\WeatherController\\WeatherController\\obj\\",
+      "outputPath": "H:\\homeworkcnn3\\WeatherController\\WeatherController\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

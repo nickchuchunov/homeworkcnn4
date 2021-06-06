@@ -11,29 +11,83 @@ namespace WeatherController.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        // Возможность сохранить температуру в указанное время  POST
 
-        private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+        (DateTime timespin, int? Temperature) ValuesHolder; // кортеж 
+
+
+        [HttpPost("SevTemperature")]
+       public (DateTime timespin, int? Temperature) controlletSevTemperature (DateTime time, int holder )
         {
-            _logger = logger;
+
+            while  (DateTime.Now==time) {  (DateTime timespin, int Temperature)  ValuesHolder = (time, holder); return ValuesHolder; }
+
+            return ValuesHolder;
+
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
+
+
+
+
+
+
+
+
+
+
+        // Возможность отредактировать показатель температуры в указанное время  PATCH
+
+        [HttpPost("SevTemperature")]
+        public (DateTime timespin, int? Temperature) controlletEditingTemperature(DateTime time, int holder) { while (time == ValuesHolder.timespin) { ValuesHolder.Temperature = holder;  return ValuesHolder; } return ValuesHolder; }
+
+
+
+
+
+
+
+
+        //возможность удалить показатель температуры в указанный промежуток времени PATCH
+
+       
+
+
+        [HttpPatch("DeleteTemperature")]
+        public (DateTime timespin, int? Temperature) controlletDeleteTemperature(DateTime time, int holder) { while (time == ValuesHolder.timespin) { int? _null =null ; ValuesHolder.Temperature = _null; }; return ValuesHolder; }
+
+
+        //Возможность прочитать список показателей температуры за указанный промежуток времени  GET
+
+
+        [HttpGet("RedTemperature")]
+        public (DateTime timespin, int? Temperature) controlletRedeTemperature(DateTime time) { while (time == ValuesHolder.timespin) { return ValuesHolder; } return ValuesHolder; }
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -1,0 +1,7 @@
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.csprojAssemblyReference.cache
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.GeneratedMSBuildEditorConfig.editorconfig
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.AssemblyInfoInputs.cache
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.AssemblyInfo.cs
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.csproj.CoreCompileInputs.cache
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.MvcApplicationPartsAssemblyInfo.cs
+H:\homeworkcnn3\WeatherController\WeatherController\obj\Debug\net5.0\WeatherController.MvcApplicationPartsAssemblyInfo.cache
